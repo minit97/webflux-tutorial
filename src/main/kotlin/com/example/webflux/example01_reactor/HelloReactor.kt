@@ -1,4 +1,4 @@
-package com.example.webflux
+package com.example.webflux.example01_reactor
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import reactor.core.publisher.Flux

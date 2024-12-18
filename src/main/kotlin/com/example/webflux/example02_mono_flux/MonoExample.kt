@@ -1,4 +1,4 @@
-package com.example.webflux.example
+package com.example.webflux.example02_mono_flux
 
 import com.jayway.jsonpath.JsonPath
 import io.github.oshai.kotlinlogging.KotlinLogging

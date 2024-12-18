@@ -1,9 +1,8 @@
-package com.example.webflux.example
+package com.example.webflux.example02_mono_flux
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
-import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 
 private val log = KotlinLogging.logger {}
