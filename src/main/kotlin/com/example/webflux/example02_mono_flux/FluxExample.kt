@@ -10,7 +10,7 @@ private val log = KotlinLogging.logger {}
 /** Flux 기본 예제
  */
 fun flux01() {
-    Flux.just(6,9,13)
+    Flux.just(6, 9, 13)
         .map { num -> num % 2 }
         .subscribe { reminder -> log.info { "# reminder: $reminder" } }
 }
@@ -28,7 +28,7 @@ fun flux02() {
  */
 fun flux03() {
     val flux: Flux<Any> = Mono.justOrEmpty<Any>(null)
-        .concatWith(Mono.justOrEmpty("Jobs"))
+                                .concatWith(Mono.justOrEmpty("Jobs"))   // concatWith : Mono와 Mono를 합치는 Operator
     flux.subscribe { log.info{ "# result: $it" } }
 }
 
@@ -39,6 +39,6 @@ fun flux04() {
         Flux.just("Venus"),
         Flux.just("Earth"),
         Flux.just("Mars"),
-    ).collectList()
+    ).collectList() // List 화
         .subscribe { planetList -> log.info { "# Solar System: $planetList" } }
 }
